@@ -86,7 +86,7 @@ function createMap(earthquakes) {
     }
   );
 
-  var satellitStreetsemap = L.tileLayer(
+  var satelliteStreetsmap = L.tileLayer(
     "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
     {
       attribution:
@@ -119,6 +119,7 @@ function createMap(earthquakes) {
         fillOpacity: 0,
         weight: 3,
         color: "orange",
+        interactive: false,
       },
     });
     tectonicPlates.addLayer(faultLines);
